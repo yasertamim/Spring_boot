@@ -1,4 +1,5 @@
 FROM openjdk:17
-ADD target/docker-spring.jar docker-spring.jar
 EXPOSE 8080
+ADD target/docker-spring.jar docker-spring.jar
 ENTRYPOINT ["java", "-jar", "docker-spring.jar"]
+
